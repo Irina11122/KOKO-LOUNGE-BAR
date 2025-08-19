@@ -1,0 +1,285 @@
+{
+  "restaurant": {
+    "name": "Koko Lounge-Bar",
+    "menu": {
+      "pizza": [
+        {
+          "id": 1,
+          "name": "Margherita",
+          "description": "Tomato sauce, mozzarella cheese, and fresh basil.",
+          "price": 10.99,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 2,
+          "name": "Pepperoni",
+          "description": "Tomato sauce, mozzarella cheese, and spicy pepperoni slices.",
+          "price": 12.49,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 3,
+          "name": "Hawaiian",
+          "description": "Tomato sauce, mozzarella, ham, and pineapple.",
+          "price": 12.99,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 4,
+          "name": "Veggie Delight",
+          "description": "Tomato sauce, mozzarella, bell peppers, onions, olives, and mushrooms.",
+          "price": 11.99,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 5,
+          "name": "BBQ Chicken",
+          "description": "BBQ sauce, mozzarella, grilled chicken, red onions.",
+          "price": 13.49,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 6,
+          "name": "Four Cheese",
+          "description": "Mozzarella, parmesan, cheddar, and gorgonzola.",
+          "price": 13.99,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 7,
+          "name": "Meat Lovers",
+          "description": "Pepperoni, sausage, ham, and bacon.",
+          "price": 14.99,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 8,
+          "name": "Mediterranean",
+          "description": "Tomato sauce, mozzarella, olives, feta, sun-dried tomatoes.",
+          "price": 13.49,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 9,
+          "name": "Spicy Italian",
+          "description": "Tomato sauce, mozzarella, spicy salami, chili flakes.",
+          "price": 13.99,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 10,
+          "name": "Mushroom Truffle",
+          "description": "Cream sauce, mozzarella, mushrooms, truffle oil.",
+          "price": 14.49,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 11,
+          "name": "Caprese",
+          "description": "Tomato, mozzarella, fresh basil, balsamic drizzle.",
+          "price": 12.99,
+          "image": "/food/full-pizza.png"
+        },
+        {
+          "id": 12,
+          "name": "Seafood Special",
+          "description": "Tomato sauce, mozzarella, shrimp, calamari, garlic.",
+          "price": 15.49,
+          "image": "/food/full-pizza.png"
+        }
+      ],
+      "steak": [
+        {
+          "id": 10,
+          "name": "Ribeye Steak",
+          "description": "Grilled ribeye served with roasted potatoes and seasonal vegetables.",
+          "price": 24.99,
+          "image": "/food/steak.png"
+        },
+        {
+          "id": 11,
+          "name": "Filet Mignon",
+          "description": "Tender filet mignon with red wine sauce and mashed potatoes.",
+          "price": 29.99,
+          "image": "/food/steak.png"
+        },
+        {
+          "id": 12,
+          "name": "T-Bone Steak",
+          "description": "Juicy T-bone grilled to perfection with herb butter.",
+          "price": 28.99,
+          "image": "/food/steak.png"
+        },
+        {
+          "id": 13,
+          "name": "Sirloin Steak",
+          "description": "Grilled sirloin with chimichurri sauce.",
+          "price": 22.99,
+          "image": "/food/steak.png"
+        },
+        {
+          "id": 14,
+          "name": "Porterhouse",
+          "description": "Large porterhouse with garlic mashed potatoes.",
+          "price": 31.99,
+          "image": "/food/steak.png"
+        },
+        {
+          "id": 15,
+          "name": "Steak Frites",
+          "description": "Ribeye with crispy french fries and peppercorn sauce.",
+          "price": 26.99,
+          "image": "/food/steak.png"
+        }
+      ],
+      "pasta": [
+        {
+          "id": 20,
+          "name": "Spaghetti Carbonara",
+          "description": "Spaghetti with pancetta, eggs, parmesan cheese, and black pepper.",
+          "price": 13.99,
+          "image": "/food/pasta.png"
+        },
+        {
+          "id": 21,
+          "name": "Penne Arrabbiata",
+          "description": "Penne pasta in a spicy tomato and garlic sauce.",
+          "price": 11.99,
+          "image": "/food/pasta.png"
+        },
+        {
+          "id": 22,
+          "name": "Fettuccine Alfredo",
+          "description": "Creamy Alfredo sauce with fettuccine and parmesan.",
+          "price": 12.99,
+          "image": "/food/pasta.png"
+        },
+        {
+          "id": 23,
+          "name": "Lasagna Bolognese",
+          "description": "Layers of pasta with meat sauce, béchamel, and cheese.",
+          "price": 14.99,
+          "image": "/food/pasta.png"
+        },
+        {
+          "id": 24,
+          "name": "Pesto Pasta",
+          "description": "Pasta with fresh basil pesto, pine nuts, and parmesan.",
+          "price": 12.49,
+          "image": "/food/pasta.png"
+        },
+        {
+          "id": 25,
+          "name": "Seafood Linguine",
+          "description": "Linguine with shrimp, clams, mussels, and garlic sauce.",
+          "price": 15.99,
+          "image": "/food/pasta.png"
+        }
+      ],
+      "salads": [
+        {
+          "id": 40,
+          "name": "Caesar Salad",
+          "description": "Romaine lettuce, parmesan cheese, croutons, and Caesar dressing.",
+          "price": 8.99,
+          "image": "/food/salad.png"
+        },
+        {
+          "id": 41,
+          "name": "Greek Salad",
+          "description": "Tomatoes, cucumber, olives, red onion, feta cheese, and olive oil.",
+          "price": 9.49,
+          "image": "/food/salad.png"
+        },
+        {
+          "id": 42,
+          "name": "Caprese Salad",
+          "description": "Tomatoes, mozzarella, basil, and balsamic glaze.",
+          "price": 9.99,
+          "image": "/food/salad.png"
+        },
+        {
+          "id": 43,
+          "name": "Spinach Salad",
+          "description": "Fresh spinach, mushrooms, bacon bits, and vinaigrette.",
+          "price": 8.99,
+          "image": "/food/salad.png"
+        },
+        {
+          "id": 44,
+          "name": "Cobb Salad",
+          "description": "Mixed greens, chicken, bacon, avocado, blue cheese, and boiled eggs.",
+          "price": 10.99,
+          "image": "/food/salad.png"
+        }
+      ],
+      "desserts": [
+        {
+          "id": 30,
+          "name": "Tiramisu",
+          "description": "Coffee-soaked ladyfingers layered with mascarpone cream.",
+          "price": 6.5,
+          "image": "/food/dessert-1.png"
+        },
+        {
+          "id": 31,
+          "name": "Chocolate Lava Cake",
+          "description": "Warm chocolate cake with a molten chocolate center.",
+          "price": 6.99,
+          "image": "/food/dessert-2.png"
+        },
+        {
+          "id": 32,
+          "name": "Cheesecake",
+          "description": "Classic creamy cheesecake with graham cracker crust.",
+          "price": 6.99,
+          "image": "/food/dessert-3.png"
+        },
+        {
+          "id": 33,
+          "name": "Panna Cotta",
+          "description": "Italian custard dessert with berry sauce.",
+          "price": 6.49,
+          "image": "/food/dessert.png"
+        }
+      ],
+      "drinks": [
+        {
+          "id": 50,
+          "name": "Espresso",
+          "description": "Strong Italian coffee shot.",
+          "price": 2.5,
+          "image": "/food/coffee.png"
+        },
+        {
+          "id": 51,
+          "name": "Red Wine - Chianti",
+          "description": "Glass of full-bodied Italian red wine.",
+          "price": 8.0,
+          "image": "/food/coffee.png"
+        },
+        {
+          "id": 52,
+          "name": "Cappuccino",
+          "description": "Espresso with steamed milk and foam.",
+          "price": 3.5,
+          "image": "/food/coffee.png"
+        },
+        {
+          "id": 53,
+          "name": "Lemonade",
+          "description": "Freshly squeezed lemonade.",
+          "price": 3.0,
+          "image": "/food/coffee.png"
+        },
+        {
+          "id": 54,
+          "name": "Iced Tea",
+          "description": "Refreshing iced tea with lemon.",
+          "price": 3.0,
+          "image": "/food/coffee.png"
+        }
+      ]
+    }
+  }
+}

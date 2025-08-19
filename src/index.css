@@ -1,0 +1,557 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Custum Stuff Desktop ------------- */
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+#animated-pizza {
+  position: fixed;
+  top: 0%;
+  left: 68%;
+  z-index: 50;
+  height: 24%;
+}
+
+.my-scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+.my-scroll-container::-webkit-scrollbar-track {
+  background-color: #000;
+}
+.my-scroll-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to right,
+    #f9f295,
+    #e0aa3e,
+    #faf398,
+    #b88a44,
+    #b88a44,
+    #faf398,
+    #e0aa3e,
+    #f9f295
+  );
+  border-radius: 4px;
+}
+
+.open-cart {
+  width: 300px;
+  height: 70vh;
+  overflow-x: hidden;
+  background-color: #eee;
+  border: 5px solid #9d8b5a;
+  border-radius: 12px;
+  box-shadow: 0 0 50px #ddcc999f;
+}
+
+/* ------------------ Home Desktop ------------------ */
+
+#home {
+  background: linear-gradient(132.77deg, #414850 11.17%, #120000 74.03%);
+  color: white;
+}
+
+.crumbs-2 {
+  height: 90%;
+  rotate: -180deg;
+  right: 40%;
+  top: 10%;
+}
+
+.napkin {
+  background: linear-gradient(
+    148.17deg,
+    #fffaea 22.53%,
+    #ddcc99 29.8%,
+    #473a16 75.78%
+  );
+  border-radius: 8px;
+}
+.home-text-box {
+  & h1 {
+    color: #ffe494;
+    line-height: 100px;
+    text-shadow: 2px 0 #745d4b, -2px 0 #745d4b, 0 2px #745d4b, 0 -2px #fff,
+      1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  }
+
+  & p {
+    line-height: 62px;
+  }
+
+  & button {
+    width: 70%;
+    font-size: 2.5rem;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background: linear-gradient(
+        87.41deg,
+        #9d8b5a 3.47%,
+        #e3d4a8 74.77%,
+        #fcf6e3 99.33%
+      );
+      color: #2b2b2b;
+      font-weight: bolder;
+      box-shadow: 0 0 50px #202020;
+    }
+  }
+}
+
+/* ----------------- Specialties Desktop -------------------- */
+
+#specialties {
+  background: linear-gradient(180deg, #444343 0%, #141414 100%);
+}
+.specialty-card {
+  width: 30%;
+}
+
+.specialty-food {
+  top: 0%;
+  left: 12%;
+  height: 90%;
+}
+
+/* --------------- About Desktop ----------------- */
+#about {
+  background: linear-gradient(180deg, #444343 0%, #141414 100%);
+}
+
+.about-golden-line {
+  width: 50%;
+  height: 5px;
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    #f9f295,
+    #e0aa3e,
+    #faf398,
+    #b88a44,
+    #b88a44,
+    #faf398,
+    #e0aa3e,
+    #f9f295
+  );
+  border-radius: 12px;
+  animation: move-bg 4s infinite alternate-reverse;
+}
+
+@keyframes move-bg {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+.cards {
+  width: 25%;
+  height: 50%;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px 5px;
+}
+/* ------------------ Menu ------------------------ */
+
+#menu {
+  background: linear-gradient(180deg, #444343 0%, #141414 100%);
+}
+
+.menu-scroll {
+  overflow-y: auto;
+}
+
+.meni-box {
+  width: 70%;
+}
+
+.order-box {
+  width: 20%;
+  background-color: rgba(179, 177, 177, 0.671);
+  height: 80vh;
+  position: fixed;
+  right: 5%;
+  top: 10%;
+  border-radius: 12px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+.menu-info-cards {
+  cursor: pointer;
+  transition: all 0.7s ease;
+
+  &:hover img {
+    scale: 1.2;
+    rotate: 380deg;
+    transition: all 0.7s ease;
+  }
+
+  &:hover .order-btn {
+    background: #303030;
+    color: #ddcc99;
+    rotate: 0deg;
+    left: 1%;
+    width: 100%;
+    bottom: 58%;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 10px #745d4b, 0 2px 10px #9d8b5a, 0 2px 10px #b4957c,
+      0 0 30px #ddcc99;
+    text-shadow: 2px 1px 4px #e0aa3e;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    &:hover {
+      background-color: #eee;
+      color: #473a16;
+    }
+  }
+
+  &:hover h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    background: linear-gradient(to right, #f9f295, #e0aa3e, #faf398, #b88a44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.7s ease;
+    animation: hover-text-bg 4s infinite alternate-reverse;
+  }
+
+  &:hover .price {
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all 0.7s ease;
+  }
+}
+& .order-btn {
+  background: #b4957c;
+  position: absolute;
+  bottom: 29%;
+  left: 70%;
+  rotate: 320deg;
+  padding: 10px 20px;
+  height: 20%;
+  z-index: 0;
+  border-radius: 4px;
+}
+
+.menu-info-cards
+
+/* ------------------------- Cart Desktop ---------------------------- */
+
+.order-food-img {
+  left: 1%;
+}
+
+.minus-btn {
+  background-color: #303030;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  color: #b4957c;
+  font-size: 2rem;
+  border-radius: 50%;
+  top: 20%;
+  left: -2%;
+  transform: translate(-50%, 50%);
+}
+
+.plus-btn {
+  background-color: #303030;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  color: #b4957c;
+  font-size: 2rem;
+  border-radius: 50%;
+  top: 20%;
+  right: -20%;
+  transform: translate(-50%, 50%);
+}
+
+.plus-btn,
+.minus-btn {
+  &:hover {
+    transition: all 0.4s ease;
+    background: #745d4b;
+    color: #303030;
+    border: 2px solid #2b2b2b;
+    scale: 1.2;
+  }
+}
+
+.remove-btn {
+  background: #745d4b;
+  padding: 4px 9px;
+  width: 50%;
+  border-radius: 12px;
+  z-index: 2;
+  font-size: 1.2rem;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    scale: 1.2;
+    background: #303030;
+    color: #ddcc99;
+  }
+}
+
+/* ------------ Finish Order ------------- */
+
+.finish-order-modal {
+  background: #d9d9d9;
+  width: 80%;
+  padding: 10px;
+  height: 80%;
+  border-radius: 12px;
+  background-color: #eee;
+  text-align: center;
+  & h1 {
+    font-size: 2rem;
+    background: #efefef;
+  }
+
+  & button {
+    background: linear-gradient(272.96deg, #353535 3.94%, #111111 90.84%);
+    padding: 10px 30px;
+    color: #eee;
+    font-size: 2rem;
+    border-radius: 12px;
+  }
+  & p {
+    width: 50%;
+  }
+}
+
+/* ------------- Pay ------------------- */
+#pay {
+  background: linear-gradient(132.77deg, #3a4047 11.17%, #23292c 74.03%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  & button {
+    padding: 10px;
+    width: 20%;
+    font-size: 1.7rem;
+  }
+}
+
+.pay-div {
+  background: #d9d9d9;
+  width: 80%;
+  height: 90%;
+  border-radius: 18px;
+}
+
+.payment-p {
+  width: 30%;
+  margin-bottom: 100px;
+}
+.credit-card {
+  background: linear-gradient(45deg, #0b0b0b, #25272a, #414850);
+  height: 300px;
+  width: 500px;
+  border-radius: 24px;
+  box-shadow: 1px 2px 30px #212121;
+  margin-bottom: 100px;
+}
+
+/* ------------- Contact -------------- */
+
+#contact {
+  height: 100vh;
+  background: url(/contactbg.png);
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 912px) {
+  /* ---------- Custum Stuff  912px ------------- */
+  #animated-pizza {
+    display: none;
+  }
+  /* ---------- Home 912px ------------ */
+
+  .home-text-box {
+    & h1 {
+      font-size: 4rem;
+      line-height: 70px;
+    }
+  }
+  .home-images-container {
+    margin-top: 120%;
+  }
+
+  .half-pizza-img {
+    rotate: -120deg;
+    left: 10%;
+
+    bottom: -200px;
+    height: 700px;
+
+    z-index: 1;
+  }
+
+  /* -------------------- Specialties 912px ------------------ */
+
+  .specialty-card {
+    width: 90%;
+  }
+
+  /* ----------------- About 912px ----------------- */
+  #about {
+    background: linear-gradient(180deg, #444343 0%, #141414 100%);
+    height: 170vh;
+  }
+  .about-golden-line {
+    width: 100%;
+  }
+  .cards {
+    width: 90%;
+  }
+  /* ----------- Menu --------------- */
+
+  .meni-box {
+    width: 100%;
+  }
+
+  .order-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 789px) {
+  /* ---------- Custum Stuff 789px ------------- */
+  #animated-pizza {
+    display: none;
+  }
+  /* ---------- Home 789px ------------ */
+
+  .home-text-box {
+    margin: 80px 0 0 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    & h1 {
+      font-size: 3.3rem;
+      line-height: 70px;
+    }
+
+    & p {
+      font-size: 1.2rem;
+      line-height: 50px;
+    }
+
+    & button {
+      align-self: center;
+      z-index: 1;
+      font-size: 1.8rem;
+    }
+  }
+  .home-images-container {
+    margin-top: 125%;
+  }
+  .napkin {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    rotate: 12deg;
+    z-index: 0;
+    width: 100%;
+    height: 300px;
+  }
+
+  /* -------------------- Specialties 789px ------------------ */
+
+  .specialty-card {
+    width: 90%;
+  }
+
+  /* ----------------- About 789px ----------------- */
+
+  .about-golden-line {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  /* --------- Custum Stuff 375px ------- */
+  #animated-pizza {
+    display: none;
+  }
+  /* ---------- Home 375px ------------ */
+
+  .home-text-box {
+    margin: 50px 0 0 0;
+    padding: 10px;
+    & h1 {
+      font-size: 3rem;
+    }
+
+    & p {
+      line-height: 40px;
+      font-size: 1.1rem;
+      text-shadow: 0 0 20px #000;
+    }
+
+    & button {
+      font-size: 1rem;
+      margin-bottom: 10%;
+      padding: 8px 10px;
+    }
+  }
+  .home-images-container {
+    margin-top: 100%;
+  }
+  .napkin {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    rotate: 12deg;
+    z-index: 0;
+    width: 100%;
+    height: 300px;
+  }
+  .crumbs {
+    opacity: 40%;
+  }
+
+  /* ------------------ Specialties 375px ---------------- */
+
+  .specialty-card {
+    width: 90%;
+  }
+
+  /* ----------------- About 375px ----------------- */
+  #about {
+    background: linear-gradient(180deg, #444343 0%, #141414 100%);
+    height: 220vh;
+  }
+  .about-golden-line {
+    width: 100%;
+  }
+
+  .cards {
+    height: 70%;
+  }
+
+  /* -------------------- Menu -------------------------- */
+  .menu-info-cards {
+    height: 70vh;
+    background: transparent;
+    width: 90%;
+  }
+}
